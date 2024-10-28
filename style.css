@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* colors */
+
+.blueBackground {
+    background-color: #1F2937;
+}
+
+.grayBackground {
+    background-color: #E5E7EB;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     color: red;
 }
 
@@ -21,7 +29,7 @@ nav .logo {
     color: #F9FAF8;
 }
 
-nav .container, main .container {
+nav .container, .rowOne, .rowTwo, .rowThree {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,22 +56,17 @@ nav a:hover {
     color: #3882F6;
 }
 
-/* main */
+/* row 1 */
 
-main {
-    background-color: #1F2937;
-}
-
-main .container {
+.rowOne {
     padding: 75px 0 75px 0;
-    align-items: start;
 }
 
-main .header {
+.rowOneText {
     flex-basis: 50%;
 }
 
-main .header h1 {
+.rowOneText h1 {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
@@ -71,19 +74,19 @@ main .header h1 {
     margin: 0;
 }
 
-main .header p {
+.rowOneText p {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-main .image {
+.rowOneImage {
     background-color: gray;
     max-width: 500px;
     height: 225px;
     flex-basis: 50%;
 }
 
-main button {
+.rowOne button {
     background-color: #3882F6;
     border: none;
     border-radius: 10px;
@@ -92,4 +95,60 @@ main button {
     color: #E5E7EB;
     font-weight: bold;
     font-size: 15px;
+}
+
+/* row 2 */
+
+.rowTwo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 75px 0;
+}
+
+.rowTwo h1 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.cubesContainer {
+    display: flex;
+    gap: 50px;
+}
+
+.cube {
+    width: 200px;
+    text-align: center;
+}
+
+.cubeText {
+    color: #1F2937;
+}
+
+.cubeShape {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #3882F6;
+    border-radius: 20px;
+}
+
+/* row 3 */
+
+.rowThree {
+    max-width: 800px;
+    flex-direction: column;
+    align-items: end;
+    padding: 75px 0 75px 0;
+}
+
+.rowThree p {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0;
+}
+
+.rowThree h1 {
+    color: #1F2937;
+    margin: 0;
 }
